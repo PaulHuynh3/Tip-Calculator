@@ -13,9 +13,10 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
 
+@property (weak, nonatomic) IBOutlet UITextField *tipPercentageTextField;
+
 @property (weak, nonatomic) IBOutlet UILabel *tipAmountLabel;
 
-@property (weak, nonatomic) IBOutlet UITextField *tipPercentageTextField;
 
 @property (nonatomic) CalculateTip* calculateTip;
 
@@ -25,37 +26,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.calculateTip = [[CalculateTip alloc]init];
+    _calculateTip = [[CalculateTip alloc]init];
     
 }
 
 
 
-
-
-//Have the calculateTip method work out what a 15% tip would be
+//Have the calculateTip method
 - (IBAction)CalculateTipButtonTap:(UIButton *)sender {
     
-    NSString *billAmount = self.billAmountTextField.text;
-    float amount = [billAmount floatValue];
+     float floatValue = [self.calculateTip calculatingTip:[self.billAmountTextField.text floatValue] percent:[self.tipPercentageTextField.text floatValue]];
     
     
-    NSString *tipAmount = self.tipPercentageTextField.text;
-    float tipPercent = [tipAmount floatValue];
+    NSString *tipForRestaurant = [NSNumber numberWithFloat:floatValue].stringValue;
     
-    
-    float  answer = [self.calculateTip calculatingTip:amount percent:tipPercent];
-    
-    NSString *customerShouldPay = [NSString stringWithFormat:@"%f",answer];
-    
-    //show tip amount
-    self.tipPercentageTextField.text = customerShouldPay;
-    
-    //erase user's answer
-    self.billAmountTextField.text = @"";
-    
-    
-//    NSInteger life = [formatter numberFromString:self.playerOneGameLife.text].integerValue - 1;
+    self.tipAmountLabel.text = tipForRestaurant;
+
 
 }
 

@@ -33,7 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate Tip"/>
                                 <connections>
-                                    <action selector="CalculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3f-eR-YbO"/>
+                                    <action selector="CalculateTipButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JAx-r7-06T"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMT-Na-VR8">
@@ -50,13 +50,6 @@
                                 <color key="textColor" red="0.67328799959999996" green="0.34440005169999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyN-fd-T69">
-                                <rect key="frame" x="68" y="251" width="239" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-tg-DgN">
                                 <rect key="frame" x="135" y="78" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -64,13 +57,20 @@
                                 <color key="textColor" red="0.67328799959999996" green="0.34440005169999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyN-fd-T69">
+                                <rect key="frame" x="68" y="256" width="239" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="billAmountTextField" destination="VJj-Hg-ZgU" id="1a1-k0-Q0E"/>
-                        <outlet property="tipAmountLabel" destination="CMT-Na-VR8" id="sUe-Z2-fdR"/>
-                        <outlet property="tipPercentageTextField" destination="gyN-fd-T69" id="NGB-mi-g3A"/>
+                        <outlet property="billAmountTextField" destination="VJj-Hg-ZgU" id="yOl-nk-SEy"/>
+                        <outlet property="tipAmountLabel" destination="CMT-Na-VR8" id="SAp-vP-0VF"/>
+                        <outlet property="tipPercentageTextField" destination="gyN-fd-T69" id="fq3-Lk-QTu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

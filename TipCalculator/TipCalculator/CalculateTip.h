@@ -9,10 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface CalculateTip : NSObject
+
 //-(float)calculatingTip:(NSString*)amount;
-
-
--(float)calculatingTip:(int)amount percent:(int)percent;
+-(float)calculatingTip:(float)amount percent:(float)percent;
 
 
 @end
