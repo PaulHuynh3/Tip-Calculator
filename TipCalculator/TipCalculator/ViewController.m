@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CalculateTip.h"
 
 @interface ViewController ()
 
@@ -16,26 +17,46 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *tipPercentageTextField;
 
+@property (nonatomic) CalculateTip* calculateTip;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.calculateTip = [[CalculateTip alloc]init];
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 //Have the calculateTip method work out what a 15% tip would be
-- (IBAction)CalculateTip:(UIButton *)sender {
+- (IBAction)CalculateTipButtonTap:(UIButton *)sender {
+    
+    NSString *billAmount = self.billAmountTextField.text;
+    float amount = [billAmount floatValue];
     
     
+    NSString *tipAmount = self.tipPercentageTextField.text;
+    float tipPercent = [tipAmount floatValue];
+    
+    
+    float  answer = [self.calculateTip calculatingTip:amount percent:tipPercent];
+    
+    NSString *customerShouldPay = [NSString stringWithFormat:@"%f",answer];
+    
+    //show tip amount
+    self.tipPercentageTextField.text = customerShouldPay;
+    
+    //erase user's answer
+    self.billAmountTextField.text = @"";
+    
+    
+//    NSInteger life = [formatter numberFromString:self.playerOneGameLife.text].integerValue - 1;
+
 }
 
 

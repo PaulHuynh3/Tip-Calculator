@@ -13,7 +13,7 @@
 		DA4E02AD1F6C24DB00A10CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4E02AB1F6C24DB00A10CBA /* Main.storyboard */; };
 		DA4E02AF1F6C24DB00A10CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4E02AE1F6C24DB00A10CBA /* Assets.xcassets */; };
 		DA4E02B21F6C24DB00A10CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4E02B01F6C24DB00A10CBA /* LaunchScreen.storyboard */; };
-		DA4E02BE1F6C2C5A00A10CBA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E02BD1F6C2C5A00A10CBA /* User.m */; };
+		DA4E02C11F6C2E5300A10CBA /* CalculateTip.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E02C01F6C2E5300A10CBA /* CalculateTip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		DA4E02AE1F6C24DB00A10CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA4E02B11F6C24DB00A10CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4E02B31F6C24DB00A10CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA4E02BC1F6C2C5A00A10CBA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		DA4E02BD1F6C2C5A00A10CBA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		DA4E02BF1F6C2E5300A10CBA /* CalculateTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateTip.h; sourceTree = "<group>"; };
+		DA4E02C01F6C2E5300A10CBA /* CalculateTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateTip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 		DA4E02BB1F6C25C000A10CBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA4E02BC1F6C2C5A00A10CBA /* User.h */,
-				DA4E02BD1F6C2C5A00A10CBA /* User.m */,
+				DA4E02BF1F6C2E5300A10CBA /* CalculateTip.h */,
+				DA4E02C01F6C2E5300A10CBA /* CalculateTip.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4E02BE1F6C2C5A00A10CBA /* User.m in Sources */,
+				DA4E02C11F6C2E5300A10CBA /* CalculateTip.m in Sources */,
 				DA4E02AA1F6C24DB00A10CBA /* ViewController.m in Sources */,
 				DA4E02A71F6C24DB00A10CBA /* AppDelegate.m in Sources */,
 				DA4E02A41F6C24DB00A10CBA /* main.m in Sources */,
