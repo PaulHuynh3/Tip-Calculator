@@ -10,6 +10,12 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
+
+@property (weak, nonatomic) IBOutlet UILabel *tipAmountLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *tipPercentageTextField;
+
 @end
 
 @implementation ViewController
@@ -24,6 +30,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+//Have the calculateTip method work out what a 15% tip would be
+- (IBAction)CalculateTip:(UIButton *)sender {
+    
+    
+}
+
+
 
 
 @end

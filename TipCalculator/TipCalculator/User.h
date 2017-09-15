@@ -1,16 +1,16 @@
 //
-//  ViewController.h
+//  User.h
 //  TipCalculator
 //
 //  Created by Paul on 2017-09-15.
 //  Copyright © 2017 Paul. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "User.h"
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+@interface User : NSObject
+
+
 
 
 @end
-
